@@ -1,0 +1,44 @@
+.projects-container {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-8
+}
+
+/* project card */
+.project-card {
+  /*  */
+}
+
+.project-card-header {
+  @apply flex items-center justify-between;
+}
+
+.project-name {
+  @apply font-bold flex items-center gap-1;
+}
+
+.project-name-icon {
+  @apply flex items-center gap-1;
+}
+
+.project-duration {
+  @apply text-sm text-neutral-400;
+}
+
+.project-summary {
+  @apply text-sm text-neutral-600;
+}
+
+.project-description {
+  @apply text-sm text-neutral-600 mt-2;
+}
+
+.project-keywords-container {
+  @apply mt-2 flex flex-wrap gap-1;
+}
+
+.keyword-tag {
+  @apply text-xs font-extralight bg-neutral-100 text-neutral-700 rounded px-1 py-0.5;
+}
+
+.project-github-stars {
+  @apply text-sm text-neutral-400 flex items-center gap-1;
+}

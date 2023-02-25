@@ -6,8 +6,14 @@ const projects = store.projects
 <template>
   <SectionBox
     v-if="projects"
-    title="projects"
+    title="Projects"
   >
-    projects
+    <div class="projects-container">
+      <ProjectCard
+        v-for="project in projects"
+        :key="project.name"
+        :project="project"
+      />
+    </div>
   </SectionBox>
 </template>

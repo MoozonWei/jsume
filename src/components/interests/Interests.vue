@@ -6,7 +6,7 @@ const interests = store.interests
 <template>
   <SectionBox
     v-if="interests"
-    title="interests"
+    title="Interests"
   >
     interests
   </SectionBox>

@@ -6,7 +6,7 @@ const certificates = store.certificates
 <template>
   <SectionBox
     v-if="certificates"
-    title="certificates"
+    title="Certificates"
   >
     certificates
   </SectionBox>
