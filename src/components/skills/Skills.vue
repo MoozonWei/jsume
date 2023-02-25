@@ -8,6 +8,24 @@ const skills = store.skills
     v-if="skills"
     title="Skills"
   >
-    skills
+    <div class="skills-container">
+      <template
+        v-for="skill in skills"
+        :key="skill.name"
+      >
+        <span
+          class="skill-name"
+        >
+          {{ skill.name }}
+        </span>
+        <div>
+          <span>
+            {{ skill.keywords.join(', ') }}
+          </span>
+        </div>
+      </template>
+    </div>
   </SectionBox>
 </template>
+
+<style src="@/styles/skills.css" />

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  content: string
+  content?: string
 }>()
 
 const isCollapsed = ref(true)

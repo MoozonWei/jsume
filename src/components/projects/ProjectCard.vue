@@ -19,7 +19,17 @@ onMounted(
       username,
       repo,
     } = parseGithubUrl(props.project.githubUrl)
-    const stars = await getRepoStars(username, repo)
+
+    let stars = 0
+    try {
+      stars = await getRepoStars(username, repo)
+    }
+    catch (e) {
+      if (((e as any).response?.data?.message || '').includes('API rate limit exceeded'))
+        console.error('Github API rate limit exceeded')
+      else
+        console.error(e)
+    }
     githubRepoStars.value = stars
   },
 )
