@@ -1,0 +1,10 @@
+.section-container {
+  @apply pt-1.5 pb-6;
+}
+
+.section-title {
+  @apply mb-4 font-bold text-white px-2 py-0.5 rounded bg-dark-500 inline-block;
+}
+.section-slot {
+  @apply pl-4 <sm:pl-0;
+}
