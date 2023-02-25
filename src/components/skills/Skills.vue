@@ -18,11 +18,11 @@ const skills = store.skills
         >
           {{ skill.name }}
         </span>
-        <div>
-          <span>
-            {{ skill.keywords.join(', ') }}
-          </span>
-        </div>
+        <span
+          class="skill-keywords"
+        >
+          {{ skill.keywords.join(' | ') }}
+        </span>
       </template>
     </div>
   </SectionBox>
