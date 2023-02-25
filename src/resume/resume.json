@@ -96,15 +96,61 @@
       "url": "https://publication.com",
       "summary": "Description…"
     }],
-    "skills": [{
-      "name": "Web Development",
-      "level": "Master",
-      "keywords": [
-        "HTML",
-        "CSS",
-        "JavaScript"
-      ]
-    }],
+    "skills": [
+      {
+        "keywords": [
+          "TypeScript",
+          "JavaScript",
+          "Vue",
+          "Nuxt",
+          "Vite"
+        ],
+        "level": "Senior",
+        "name": "Frontend"
+      },
+      {
+        "keywords": [
+          "Node",
+          "MongoDB",
+          "MySQL",
+          "Serverless",
+          "Nginx",
+          "Docker"
+        ],
+        "level": "Senior",
+        "name": "Backend"
+      },
+      {
+        "keywords": [
+          "Android",
+          "Kotlin",
+          "PWA"
+        ],
+        "level": "Intermediate",
+        "name": "Mobile"
+      },
+      {
+        "keywords": [
+          "Firebase",
+          "AWS",
+          "Azure",
+          "AliCloud"
+        ],
+        "level": "Intermediate",
+        "name": "DevOps"
+      },
+      {
+        "keywords": [
+          "Python",
+          "Java",
+          "C/C++",
+          "C#",
+          "Go"
+        ],
+        "level": "Intermediate",
+        "name": "Languages"
+      }
+    ],
     "languages": [{
       "language": "English",
       "fluency": "Native speaker"
