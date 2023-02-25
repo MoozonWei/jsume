@@ -151,10 +151,20 @@
         "name": "Languages"
       }
     ],
-    "languages": [{
-      "language": "English",
-      "fluency": "Native speaker"
-    }],
+    "languages": [
+      {
+        "language": "Chinese",
+        "fluency": "Native speaker"
+      },
+      {
+        "language": "English",
+        "fluency": "Fluent"
+      },
+      {
+        "language": "Japanese",
+        "fluency": "Intermediate"
+      }
+    ],
     "interests": [{
       "name": "Wildlife",
       "keywords": [

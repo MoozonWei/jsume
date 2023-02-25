@@ -8,6 +8,16 @@ const languages = store.languages
     v-if="languages"
     title="Languages"
   >
-    languages
+    <template
+      v-for="language, index in languages"
+      :key="language.language"
+    >
+      <span
+        class="font-bold"
+      >
+        {{ language.language }}
+      </span>
+      [{{ language.fluency }}]{{ index < languages.length - 1 ? ', ' : '' }}
+    </template>
   </SectionBox>
 </template>

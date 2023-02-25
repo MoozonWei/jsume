@@ -1,7 +1,11 @@
 .skills-container {
-  @apply grid grid-cols-[auto,1fr] gap-x-2 gap-y-3;
+  @apply grid grid-cols-[auto,1fr] gap-3;
 }
 
 .skill-name {
   @apply font-bold text-right;
+}
+
+.skill-keywords {
+  @apply text-left;
 }
