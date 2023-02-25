@@ -6,7 +6,7 @@ const education = store.education
 <template>
   <SectionBox
     v-if="education"
-    title="education"
+    title="Education"
   >
     education
   </SectionBox>

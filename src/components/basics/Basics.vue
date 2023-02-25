@@ -17,9 +17,6 @@ const profiles = [...basics.profiles]
       >
         {{ basics.label }}
       </div>
-      <div v-if="basics.image">
-        {{ basics.image }}
-      </div>
     </div>
     <div class="basics-contact-container">
       <div
@@ -44,7 +41,7 @@ const profiles = [...basics.profiles]
         v-if="basics.url"
         class="basics-contact-icon-text"
       >
-        <i-mdi:web />
+        <i-mdi:account-circle />
         <span>
           {{ basics.url }}
         </span>

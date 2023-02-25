@@ -6,7 +6,7 @@ const languages = store.languages
 <template>
   <SectionBox
     v-if="languages"
-    title="languages"
+    title="Languages"
   >
     languages
   </SectionBox>

@@ -120,24 +120,56 @@
       "name": "Jane Doe",
       "reference": "Reference…"
     }],
-    "projects": [{
-      "name": "Project",
-      "description": "Description…",
-      "highlights": [
-        "Won award at AIHacks 2016"
-      ],
-      "keywords": [
-        "HTML"
-      ],
-      "startDate": "2019-01-01",
-      "endDate": "2021-01-01",
-      "url": "https://project.com/",
-      "roles": [
-        "Team Lead"
-      ],
-      "entity": "Entity",
-      "type": "application"
-    }]
+    "projects": [
+      {
+        "name": "Vitest",
+        "summary": "A blazing fast unit test framework powered by Vite.",
+        "githubUrl": "https://github.com/vitest-dev/vitest",
+        "description": "My name is Anthony Fu, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.",
+        "keywords": [
+          "TypeScript"
+        ],
+        "startDate": "2019-01-01",
+        "endDate": "2021-01-01",
+        "website": "https://vitest.dev/"
+      },
+      {
+        "name": "Slidev",
+        "summary": "Presentation Slides for Developers.",
+        "githubUrl": "https://github.com/slidevjs/slidev",
+        "keywords": [
+          "TypeScript"
+        ],
+        "website": "https://sli.dev/"
+      },
+      {
+        "name": "UnoCSS",
+        "summary": "Instant on-demand atomic CSS engine.",
+        "website": "https://uno.antfu.me/",
+        "githubUrl": "https://github.com/unocss/unocss",
+        "keywords": [
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "VueUse",
+        "summary": "Collection of essential Vue Composition API utils.",
+        "website": "https://vueuse.org/",
+        "githubUrl": "https://github.com/vueuse/vueuse",
+        "keywords": [
+          "TypeScript"
+        ]
+      },
+      {
+        "name": "Nuxt",
+        "summary": "The Hybrid Vue(3) Framework.",
+        "website": "https://v3.nuxtjs.org/",
+        "githubUrl": "https://github.com/nuxt/framework",
+        "keywords": [
+          "TypeScript"
+        ]
+      }
+    ]
   },
   "order": [
     "about",

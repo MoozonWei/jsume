@@ -6,6 +6,7 @@ export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
   const _: typeof import('lodash')['default']
+  const axios: typeof import('axios')['default']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
   const customRef: typeof import('vue')['customRef']
@@ -14,6 +15,7 @@ declare global {
   const effectScope: typeof import('vue')['effectScope']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getRepoStars: typeof import('./src/api/index')['getRepoStars']
   const h: typeof import('vue')['h']
   const inject: typeof import('vue')['inject']
   const isProxy: typeof import('vue')['isProxy']
@@ -37,6 +39,7 @@ declare global {
   const onServerPrefetch: typeof import('vue')['onServerPrefetch']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const parseGithubUrl: typeof import('./src/utils/index')['parseGithubUrl']
   const provide: typeof import('vue')['provide']
   const reactive: typeof import('vue')['reactive']
   const readonly: typeof import('vue')['readonly']
@@ -79,6 +82,7 @@ declare module 'vue' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
     readonly _: UnwrapRef<typeof import('lodash')['default']>
+    readonly axios: UnwrapRef<typeof import('axios')['default']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
@@ -87,6 +91,7 @@ declare module 'vue' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getRepoStars: UnwrapRef<typeof import('./src/api/index')['getRepoStars']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>
@@ -110,6 +115,7 @@ declare module 'vue' {
     readonly onServerPrefetch: UnwrapRef<typeof import('vue')['onServerPrefetch']>
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
+    readonly parseGithubUrl: UnwrapRef<typeof import('./src/utils/index')['parseGithubUrl']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>
     readonly readonly: UnwrapRef<typeof import('vue')['readonly']>

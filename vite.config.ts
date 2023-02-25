@@ -37,6 +37,9 @@ export default defineConfig({
           'lodash': [
             ['default', '_'],
           ],
+          'axios': [
+            ['default', 'axios'],
+          ],
         },
       ],
       dirs: [

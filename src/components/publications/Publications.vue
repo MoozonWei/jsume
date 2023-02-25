@@ -6,7 +6,7 @@ const publications = store.publications
 <template>
   <SectionBox
     v-if="publications"
-    title="publications"
+    title="Publications"
   >
     publications
   </SectionBox>

@@ -1,5 +1,5 @@
 .basics-container {
-  @apply p-8 flex flex-col gap-4 <sm:items-center;
+  @apply p-8 <sm:px-0 flex flex-col gap-4 <sm:items-center;
 }
 
 .basics-title {
@@ -23,5 +23,5 @@
 }
 
 .basics-profiles-container {
-  @apply flex gap-2 text-sm;
+  @apply flex gap-3 text-sm;
 }
