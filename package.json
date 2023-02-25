@@ -1,0 +1,45 @@
+{
+  "name": "jasume",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "author": {
+    "name": "Moozon",
+    "email": "muzhenweizh@gmail.com"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.13.0",
+    "axios": "^1.3.3",
+    "lodash": "^4.17.21",
+    "pinia": "^2.0.32",
+    "vue": "^3.2.45",
+    "vue-i18n": "9",
+    "vue-router": "^4.1.6"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.35.2",
+    "@commitlint/cli": "^17.4.4",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@iconify/json": "^2.2.26",
+    "@types/node": "^18.14.0",
+    "@vitejs/plugin-vue": "^4.0.0",
+    "eslint": "^8.34.0",
+    "husky": "^8.0.3",
+    "typescript": "^4.9.3",
+    "unplugin-auto-import": "^0.14.4",
+    "unplugin-icons": "^0.15.3",
+    "unplugin-vue-components": "^0.24.0",
+    "vite": "^4.1.0",
+    "vite-plugin-pages": "^0.28.0",
+    "vite-plugin-windicss": "^1.8.10",
+    "vue-tsc": "^1.0.24",
+    "windicss": "^3.5.6"
+  }
+}

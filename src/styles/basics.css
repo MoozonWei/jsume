@@ -1,0 +1,27 @@
+.basics-container {
+  @apply p-8 flex flex-col gap-4 <sm:items-center;
+}
+
+.basics-title {
+  @apply flex flex-col <sm:justify-center;
+}
+
+.basics-name {
+  @apply text-4xl font-extrabold leading-none align-top <sm:(justify-center text-center);
+}
+
+.basics-label {
+  @apply text-xl text-neutral-500 leading-none align-top <sm:(justify-center text-center);
+}
+
+.basics-contact-container {
+  @apply flex flex-col flex-wrap gap-1 <sm:(flex-row justify-center gap-x-4);
+}
+
+.basics-contact-icon-text {
+  @apply flex items-center gap-1 text-sm;
+}
+
+.basics-profiles-container {
+  @apply flex gap-2 text-sm;
+}

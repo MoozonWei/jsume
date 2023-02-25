@@ -1,0 +1,156 @@
+{
+  "en": {
+    "basics": {
+      "name": "Bonnie Ma",
+      "label": "Frontend Developer",
+      "image": "",
+      "email": "john@gmail.com",
+      "phone": "(912) 555-4321",
+      "url": "https://johndoe.com",
+      "summary": "My name is Anthony Fu, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nI am also an open-source enthusiast and maintainer. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.",
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "CA 94115",
+        "city": "San Francisco",
+        "countryCode": "US",
+        "region": "California"
+      },
+      "profiles": [
+        {
+          "network": "GitHub",
+          "username": "antfu",
+          "url": "https://github.com/antfu"
+        },
+        {
+          "network": "LinkedIn",
+          "username": "antfu",
+          "url": "https://www.linkedin.com/in/antfu"
+        },
+        {
+          "network": "Twitter",
+          "username": "antfu7",
+          "url": "https://twitter.com/antfu7"
+        },
+        {
+          "network": "Instagram",
+          "username": "antfu7",
+          "url": "https://instagram.com/antfu7"
+        },
+        {
+          "network": "Web",
+          "username": "antfu.me",
+          "url": "https://antfu.me"
+        }
+      ]
+    },
+    "work": [{
+      "name": "Company",
+      "position": "President",
+      "url": "https://company.com",
+      "startDate": "2013-01-01",
+      "endDate": "2014-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Started the company"
+      ]
+    }],
+    "volunteer": [{
+      "organization": "Organization",
+      "position": "Volunteer",
+      "url": "https://organization.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Description…",
+      "highlights": [
+        "Awarded 'Volunteer of the Month'"
+      ]
+    }],
+    "education": [{
+      "institution": "University",
+      "url": "https://institution.com/",
+      "area": "Software Development",
+      "studyType": "Bachelor",
+      "startDate": "2011-01-01",
+      "endDate": "2013-01-01",
+      "score": "4.0",
+      "courses": [
+        "DB1101 - Basic SQL"
+      ]
+    }],
+    "awards": [{
+      "title": "Award",
+      "date": "2014-11-01",
+      "awarder": "Company",
+      "summary": "There is no spoon."
+    }],
+    "certificates": [{
+      "name": "Certificate",
+      "date": "2021-11-07",
+      "issuer": "Company",
+      "url": "https://certificate.com"
+    }],
+    "publications": [{
+      "name": "Publication",
+      "publisher": "Company",
+      "releaseDate": "2014-10-01",
+      "url": "https://publication.com",
+      "summary": "Description…"
+    }],
+    "skills": [{
+      "name": "Web Development",
+      "level": "Master",
+      "keywords": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }],
+    "languages": [{
+      "language": "English",
+      "fluency": "Native speaker"
+    }],
+    "interests": [{
+      "name": "Wildlife",
+      "keywords": [
+        "Ferrets",
+        "Unicorns"
+      ]
+    }],
+    "references": [{
+      "name": "Jane Doe",
+      "reference": "Reference…"
+    }],
+    "projects": [{
+      "name": "Project",
+      "description": "Description…",
+      "highlights": [
+        "Won award at AIHacks 2016"
+      ],
+      "keywords": [
+        "HTML"
+      ],
+      "startDate": "2019-01-01",
+      "endDate": "2021-01-01",
+      "url": "https://project.com/",
+      "roles": [
+        "Team Lead"
+      ],
+      "entity": "Entity",
+      "type": "application"
+    }]
+  },
+  "order": [
+    "about",
+    "projects",
+    "publications",
+    "work",
+    "skills",
+    "education",
+    "awards",
+    "languages",
+    "certificates",
+    "volunteer",
+    "interests",
+    "references"
+  ]
+}

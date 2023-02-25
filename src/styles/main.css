@@ -1,0 +1,4 @@
+body {
+    font-family: Raleway, "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
+    @apply text-dark-500 text-base;
+}
