@@ -5,7 +5,7 @@ const education = store.education
 
 <template>
   <SectionBox
-    v-if="education"
+    v-if="education && education.length > 0"
     title="Education"
   >
     <div class="education-container">

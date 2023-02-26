@@ -5,7 +5,7 @@ const publications = store.publications
 
 <template>
   <SectionBox
-    v-if="publications"
+    v-if="publications && publications.length > 0"
     title="Publications"
   >
     publications

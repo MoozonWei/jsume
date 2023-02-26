@@ -5,7 +5,7 @@ const projects = store.projects
 
 <template>
   <SectionBox
-    v-if="projects"
+    v-if="projects && projects.length > 0"
     title="Projects"
   >
     <div class="projects-container">

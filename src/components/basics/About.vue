@@ -5,7 +5,7 @@ const basics = store.basics
 
 <template>
   <SectionBox
-    v-if="basics.summary"
+    v-if="basics.summary && basics.summary.length > 0"
     title="About"
   >
     <div

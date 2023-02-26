@@ -5,7 +5,7 @@ const interests = store.interests
 
 <template>
   <SectionBox
-    v-if="interests"
+    v-if="interests && interests.length > 0"
     title="Interests"
   >
     interests

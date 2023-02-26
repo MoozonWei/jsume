@@ -3,7 +3,7 @@ export const parseGithubUrl = (url: string) => {
   return { username, repo }
 }
 
-export const parseDate = (year: number, month: number) => {
+export const parseDate = (year: number | undefined, month: number | undefined) => {
   const monthMap: { [key: number]: string } = {
     1: 'Jan',
     2: 'Feb',
@@ -18,10 +18,11 @@ export const parseDate = (year: number, month: number) => {
     11: 'Nov',
     12: 'Dec',
   }
-  if (!monthMap[month] && !year)
+
+  if (!monthMap[month || 0] && !year)
     return 'Present'
-  else if (!monthMap[month])
+  else if (!monthMap[month || 0])
     return year
 
-  return `${monthMap[month]} ${year}`
+  return `${monthMap[month || 0]} ${year}`
 }

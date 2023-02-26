@@ -5,7 +5,7 @@ const volunteer = store.volunteer
 
 <template>
   <SectionBox
-    v-if="volunteer"
+    v-if="volunteer && volunteer.length > 0"
     title="Volunteer"
   >
     volunteer

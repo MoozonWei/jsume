@@ -5,7 +5,7 @@ const languages = store.languages
 
 <template>
   <SectionBox
-    v-if="languages"
+    v-if="languages && languages.length > 0"
     title="Languages"
   >
     <template

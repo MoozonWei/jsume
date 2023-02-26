@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import resumeConfigObject from '@/resume/resume.json'
+import resumeConfigObject from '@/resume/resume.test.json'
 // import resumeConfigObject from '@/resume/resume.antfu.json'
 
 export const useStore = defineStore('main', () => {
