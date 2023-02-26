@@ -6,50 +6,18 @@ defineProps<{
     website: string
     location: string
     summary: string
-    isCurrentRole: boolean
+    ongoing: boolean
     start: {
-      month: string
-      year: string
+      month: number
+      year: number
     }
     end: {
-      month: string
-      year: string
+      month: number
+      year: number
     }
     highlights: string[]
   }
 }>()
-
-const parseDate = (year: string, month: string) => {
-  const monthMap: { [key: string]: string } = {
-    '01': 'Jan',
-    '02': 'Feb',
-    '03': 'Mar',
-    '04': 'Apr',
-    '05': 'May',
-    '06': 'Jun',
-    '07': 'Jul',
-    '08': 'Aug',
-    '09': 'Sep',
-    '10': 'Oct',
-    '11': 'Nov',
-    '12': 'Dec',
-    '1': 'Jan',
-    '2': 'Feb',
-    '3': 'Mar',
-    '4': 'Apr',
-    '5': 'May',
-    '6': 'Jun',
-    '7': 'Jul',
-    '8': 'Aug',
-    '9': 'Sep',
-  }
-  if (!monthMap[month] && !year)
-    return 'Present'
-  else if (!monthMap[month])
-    return year
-
-  return `${monthMap[month]} ${year}`
-}
 </script>
 
 <template>
@@ -66,26 +34,14 @@ const parseDate = (year: string, month: string) => {
       </span>
     </div>
     <div class="work-duration-location">
-      <span
-        v-if="work.start"
-        class="flex items-center gap-0.5"
-      >
-        <i-mdi:calendar />
-        {{ `${parseDate(work.start.year, work.start.month)} - ${parseDate(work.end.year, work.end.month)}` }}
-      </span>
-      <span
-        class="flex items-center gap-0.5"
-      >
-        <i-material-symbols:location-on />
-        {{ work.location }}
-      </span>
-      <span
-        v-if="work.isCurrentRole"
-        class="flex items-center gap-0.5"
-      >
-        <i-mdi:circle class="text-green-100 animate-pulse" />
-        Current
-      </span>
+      <Duration
+        :start="work.start"
+        :end="work.end"
+      />
+      <Location
+        :location="work.location"
+      />
+      <Ongoing :ongoing="Boolean(work.ongoing)" />
     </div>
     <div
       v-if="work.summary"

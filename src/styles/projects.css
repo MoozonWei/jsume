@@ -35,10 +35,6 @@
   @apply mt-2 flex flex-wrap gap-1;
 }
 
-.keyword-tag {
-  @apply text-xs font-extralight bg-neutral-100 text-neutral-700 rounded px-1 py-0.5;
-}
-
 .project-github-stars {
   @apply text-sm text-neutral-400 flex items-center gap-0.5;
 }

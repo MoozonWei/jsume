@@ -1,5 +1,5 @@
 :root {
-  @apply <sm:text-[14px]
+  @apply <md:text-[14px]
 }
 
 body {
@@ -13,4 +13,8 @@ body {
 
 a {
   @apply transform origin-bottom transition-all duration-400 ease-in-out hover:(text-rose-200 underline-rose-200 scale-105 );
+}
+
+.tag {
+  @apply text-xs font-extralight bg-neutral-100 text-neutral-700 rounded px-1 py-0.5;
 }
