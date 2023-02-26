@@ -12,7 +12,7 @@ body {
 }
 
 a {
-  @apply transform origin-bottom transition-all duration-400 ease-in-out hover:(text-rose-200 underline-rose-200 scale-105 );
+  @apply transform origin-bottom transition-all duration-400 ease-in-out hover:(text-rose-300 underline-rose-300 scale-105 );
 }
 
 .tag {
