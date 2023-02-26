@@ -4,10 +4,11 @@ defineProps<{
     year: number
     month: number
   }
-  end: {
+  end?: {
     year: number
     month: number
   }
+  isTimePoint?: boolean
 }>()
 </script>
 
@@ -17,6 +18,15 @@ defineProps<{
     class="flex items-center gap-0.5"
   >
     <i-mdi:calendar />
-    {{ `${parseDate(start.year, start.month)} - ${parseDate(end.year, end.month)}` }}
+    <template
+      v-if="isTimePoint"
+    >
+      {{ `${parseDate(start.year, start.month)}` }}
+    </template>
+    <template
+      v-else
+    >
+      {{ `${parseDate(start.year, start.month)} - ${parseDate(end?.year, end?.month)}` }}
+    </template>
   </span>
 </template>

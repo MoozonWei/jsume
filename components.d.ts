@@ -33,6 +33,7 @@ declare module '@vue/runtime-core' {
     'IMdi:mapMarker': typeof import('~icons/mdi/map-marker')['default']
     'IMdi:school': typeof import('~icons/mdi/school')['default']
     'IMdi:star': typeof import('~icons/mdi/star')['default']
+    'IMdi:trophy': typeof import('~icons/mdi/trophy')['default']
     'IMdi:web': typeof import('~icons/mdi/web')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
     IMdiRoundNorthEast: typeof import('~icons/mdi/round-north-east')['default']

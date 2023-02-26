@@ -5,7 +5,7 @@ const references = store.references
 
 <template>
   <SectionBox
-    v-if="references"
+    v-if="references && references.length > 0"
     title="References"
   >
     references

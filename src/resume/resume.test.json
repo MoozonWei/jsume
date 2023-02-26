@@ -140,17 +140,6 @@
         ]
       }
     ],
-    "volunteer": [{
-      "organization": "Organization",
-      "position": "Volunteer",
-      "url": "https://organization.com/",
-      "startDate": "2012-01-01",
-      "endDate": "2013-01-01",
-      "summary": "Description…",
-      "highlights": [
-        "Awarded 'Volunteer of the Month'"
-      ]
-    }],
     "education": [
       {
         "institution": "Tamkang University",
@@ -231,19 +220,6 @@
         }
       }
     ],
-    "certificates": [{
-      "name": "Certificate",
-      "date": "2021-11-07",
-      "issuer": "Company",
-      "url": "https://certificate.com"
-    }],
-    "publications": [{
-      "name": "Publication",
-      "publisher": "Company",
-      "releaseDate": "2014-10-01",
-      "url": "https://publication.com",
-      "summary": "Description…"
-    }],
     "skills": [
       {
         "keywords": [
@@ -313,17 +289,6 @@
         "fluency": "Intermediate"
       }
     ],
-    "interests": [{
-      "name": "Wildlife",
-      "keywords": [
-        "Ferrets",
-        "Unicorns"
-      ]
-    }],
-    "references": [{
-      "name": "Jane Doe",
-      "reference": "Reference…"
-    }],
     "projects": [
       {
         "name": "Vitest",
@@ -381,7 +346,12 @@
           "TypeScript"
         ]
       }
-    ]
+    ],
+    "interests": [],
+    "certificates": [],
+    "volunteer": [],
+    "references": [],
+    "publications": []
   },
   "order": [
     "about",

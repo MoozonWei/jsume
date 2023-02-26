@@ -1,0 +1,11 @@
+.awards-container {
+  @apply flex flex-col gap-8;
+}
+
+.award-title {
+  @apply font-bold;
+}
+
+.award-duration-awarder {
+  @apply text-sm text-neutral-400 flex items-center gap-2;
+}

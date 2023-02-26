@@ -5,7 +5,7 @@ const work = store.work
 
 <template>
   <SectionBox
-    v-if="work"
+    v-if="work && work.length > 0"
     title="Work Experiences"
   >
     <div class="work-container">
