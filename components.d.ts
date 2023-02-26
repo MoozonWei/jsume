@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     Awards: typeof import('./src/components/awards/Awards.vue')['default']
     Basics: typeof import('./src/components/basics/Basics.vue')['default']
     Certificates: typeof import('./src/components/certificates/Certificates.vue')['default']
+    Collapse: typeof import('./src/components/common/Collapse.vue')['default']
     Description: typeof import('./src/components/projects/Description.vue')['default']
     Education: typeof import('./src/components/education/Education.vue')['default']
     'IMaterialSymbols:locationOn': typeof import('~icons/material-symbols/location-on')['default']
@@ -22,8 +23,12 @@ declare module '@vue/runtime-core' {
     'IMdi:arrowDown': typeof import('~icons/mdi/arrow-down')['default']
     'IMdi:arrowDownBoldCircleOutline': typeof import('~icons/mdi/arrow-down-bold-circle-outline')['default']
     'IMdi:arrowDownThin': typeof import('~icons/mdi/arrow-down-thin')['default']
+    'IMdi:calendar': typeof import('~icons/mdi/calendar')['default']
     'IMdi:chevronDown': typeof import('~icons/mdi/chevron-down')['default']
+    'IMdi:circle': typeof import('~icons/mdi/circle')['default']
+    'IMdi:circleMedium': typeof import('~icons/mdi/circle-medium')['default']
     'IMdi:email': typeof import('~icons/mdi/email')['default']
+    'IMdi:mapMarker': typeof import('~icons/mdi/map-marker')['default']
     'IMdi:star': typeof import('~icons/mdi/star')['default']
     'IMdi:web': typeof import('~icons/mdi/web')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
@@ -44,5 +49,6 @@ declare module '@vue/runtime-core' {
     Skills: typeof import('./src/components/skills/Skills.vue')['default']
     Volunteer: typeof import('./src/components/volunteer/Volunteer.vue')['default']
     Work: typeof import('./src/components/work/Work.vue')['default']
+    WorkCard: typeof import('./src/components/work/WorkCard.vue')['default']
   }
 }

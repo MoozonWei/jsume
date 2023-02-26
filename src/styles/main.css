@@ -4,5 +4,13 @@
 
 body {
     font-family: Raleway, "Helvetica Neue", Helvetica, Arial, 'Noto Sans SC', sans-serif;
-    @apply text-dark-500 text-base text-justify;
+    @apply text-dark-500 text-base;
+}
+
+.trans {
+  @apply transition duration-400 ease-in-out;
+}
+
+a {
+  @apply transform origin-bottom transition-all duration-400 ease-in-out hover:(text-rose-200 underline-rose-200 scale-105 );
 }

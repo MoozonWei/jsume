@@ -8,6 +8,12 @@ const work = store.work
     v-if="work"
     title="Work Experiences"
   >
-    work
+    <div class="work-container">
+      <WorkCard
+        v-for="item in work"
+        :key="item.end"
+        :work="item"
+      />
+    </div>
   </SectionBox>
 </template>

@@ -24,11 +24,11 @@
 }
 
 .project-summary {
-  @apply text-sm text-neutral-600;
+  @apply text-neutral-600;
 }
 
 .project-description {
-  @apply text-sm text-neutral-600 mt-2;
+  @apply font-light text-neutral-600 mt-2;
 }
 
 .project-keywords-container {
@@ -40,5 +40,5 @@
 }
 
 .project-github-stars {
-  @apply text-sm text-neutral-400 flex items-center gap-1;
+  @apply text-sm text-neutral-400 flex items-center gap-0.5;
 }
