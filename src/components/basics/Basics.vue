@@ -19,33 +19,36 @@ const profiles = [...basics.profiles]
       </div>
     </div>
     <div class="basics-contact-container">
-      <div
+      <a
         v-if="basics.email"
+        :href="`mailto:${basics.email}`"
         class="basics-contact-icon-text"
       >
         <i-mdi:email />
         <span>
           {{ basics.email }}
         </span>
-      </div>
-      <div
+      </a>
+      <a
         v-if="basics.phone"
+        :href="`tel:${basics.phone}`"
         class="basics-contact-icon-text"
       >
         <i-material-symbols:phone-enabled />
         <span>
           {{ basics.phone }}
         </span>
-      </div>
-      <div
+      </a>
+      <a
         v-if="basics.url"
+        :href="basics.url"
         class="basics-contact-icon-text"
       >
         <i-mdi:account-circle />
         <span>
           {{ basics.url }}
         </span>
-      </div>
+      </a>
       <div
         v-if="basics.location"
         class="basics-contact-icon-text"
