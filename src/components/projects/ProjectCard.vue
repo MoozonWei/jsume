@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import { getGithubRepoStars } from '@/api'
+
 const props = defineProps<{
   project: {
     name: string
@@ -22,7 +24,7 @@ onMounted(
 
     let stars = 0
     try {
-      stars = await getRepoStars(username, repo)
+      stars = await getGithubRepoStars(username, repo)
     }
     catch (e) {
       if (((e as any).response?.data?.message || '').includes('API rate limit exceeded'))
@@ -57,12 +59,13 @@ onMounted(
           </a>
         </div>
       </div>
-      <div
+      <a
         v-if="project.githubUrl && githubRepoStars"
-        class="project-github-stars"
+        :href="project.githubUrl"
+        class="project-github-stars group"
       >
-        <i-mdi:star /> {{ githubRepoStars }}
-      </div>
+        <i-mdi:star class="trans group-hover:(text-yellow-300 animate-wiggle)" /> {{ githubRepoStars }}
+      </a>
     </div>
     <div
       v-if="project.startDate && project.endDate"

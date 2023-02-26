@@ -1,0 +1,31 @@
+.work-container {
+  @apply flex flex-col gap-8;
+}
+
+.work-card {
+  /*  */
+}
+
+.work-card-header {
+  @apply flex items-center gap-2;
+}
+
+.work-company {
+  @apply font-bold underline underline-1px underline-neutral-400 underline-dashed underline-offset-3;
+}
+
+.work-position {
+  @apply text-neutral-400;
+}
+
+.work-duration-location {
+  @apply text-sm text-neutral-400 flex items-center gap-2;
+}
+
+.work-summary {
+  @apply text-neutral-600 mt-1;
+}
+
+.work-highlights {
+  @apply mt-2 font-light text-neutral-600 list-circle pl-8;
+}
