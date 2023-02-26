@@ -39,6 +39,7 @@ declare global {
   const onServerPrefetch: typeof import('vue')['onServerPrefetch']
   const onUnmounted: typeof import('vue')['onUnmounted']
   const onUpdated: typeof import('vue')['onUpdated']
+  const parseDate: typeof import('./src/utils/index')['parseDate']
   const parseGithubUrl: typeof import('./src/utils/index')['parseGithubUrl']
   const provide: typeof import('vue')['provide']
   const reactive: typeof import('vue')['reactive']
@@ -115,6 +116,7 @@ declare module 'vue' {
     readonly onServerPrefetch: UnwrapRef<typeof import('vue')['onServerPrefetch']>
     readonly onUnmounted: UnwrapRef<typeof import('vue')['onUnmounted']>
     readonly onUpdated: UnwrapRef<typeof import('vue')['onUpdated']>
+    readonly parseDate: UnwrapRef<typeof import('./src/utils/index')['parseDate']>
     readonly parseGithubUrl: UnwrapRef<typeof import('./src/utils/index')['parseGithubUrl']>
     readonly provide: UnwrapRef<typeof import('vue')['provide']>
     readonly reactive: UnwrapRef<typeof import('vue')['reactive']>

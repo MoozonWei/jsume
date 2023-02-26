@@ -81,13 +81,12 @@ onMounted(
       v-if="project.keywords"
       class="project-keywords-container"
     >
-      <div
+      <Tag
         v-for="keyword in project.keywords"
         :key="keyword"
-        class="keyword-tag"
       >
         {{ keyword }}
-      </div>
+      </Tag>
     </div>
   </div>
 </template>

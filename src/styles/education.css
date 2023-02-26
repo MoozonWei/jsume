@@ -1,0 +1,31 @@
+.education-container {
+  @apply flex flex-col gap-8;
+}
+
+.education-card {
+  /*  */
+}
+
+.education-card-sub {
+  @apply flex items-center;
+}
+
+.education-study-type {
+  @apply font-bold;
+}
+
+.education-area {
+  /*  */
+}
+
+.education-institution {
+  /*  */
+}
+
+.education-duration-location {
+  @apply text-sm text-neutral-400 flex items-center gap-2;
+}
+
+.education-courses-container {
+  @apply mt-2 flex items-center flex-wrap gap-1;
+}

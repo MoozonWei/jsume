@@ -8,6 +8,14 @@ const education = store.education
     v-if="education"
     title="Education"
   >
-    education
+    <div class="education-container">
+      <EducationCard
+        v-for="edu in education"
+        :key="edu.institution"
+        :education="edu"
+      />
+    </div>
   </SectionBox>
 </template>
+
+<style src="@/styles/education.css" />
