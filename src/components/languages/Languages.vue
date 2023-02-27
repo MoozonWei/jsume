@@ -16,8 +16,7 @@ const languages = store.languages
         class="font-bold"
       >
         {{ language.language }}
-      </span>
-      [{{ language.fluency }}]{{ index < languages.length - 1 ? ', ' : '' }}
+      </span>[{{ language.fluency }}]{{ index < languages.length - 1 ? ', ' : '' }}
     </template>
   </SectionBox>
 </template>
