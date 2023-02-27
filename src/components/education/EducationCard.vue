@@ -30,12 +30,12 @@ defineProps<{
       {{ education.studyType }}
     </div>
     <div class="education-card-sub">
-      <div class="education-area">
+      <span class="education-area">
         {{ education.area }},
-      </div>
-      <div class="education-institution">
+      </span>
+      <span class="education-institution">
         {{ education.institution }}
-      </div>
+      </span>
     </div>
     <div class="work-duration-location">
       <Duration

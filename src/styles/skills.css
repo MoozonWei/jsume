@@ -7,5 +7,5 @@
 }
 
 .skill-keywords {
-  @apply text-left;
+  @apply text-left text-neutral-600;
 }

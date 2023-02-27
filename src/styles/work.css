@@ -11,7 +11,7 @@
 }
 
 .work-company {
-  @apply font-bold underline underline-1px underline-neutral-400 underline-dashed underline-offset-3;
+  @apply font-bold underline underline-0.0625rem underline-neutral-400 underline-dashed underline-offset-3;
 }
 
 .work-position {
