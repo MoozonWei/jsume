@@ -273,11 +273,13 @@ Inspired by [antfu/resume](https://github.com/antfu/resume) and [JSON Resume](ht
     }
     ```
 
-4. Replace `/public/resume.json` with your own `resume.json` file. [Optional]
+4. Replace `/public/resume.json` with your own `resume.json` file. [optional]
 
     > Gist stores your **online** resume data, and `/public/resume.json` stores your resume data **locally**. If resume data cannot be found on Gist, local resume data will be used as a backup.
 
-5. Setup [Netlify](http://netlify.com/).
+5. Push this project to Github. [optional]
+
+6. Setup [Netlify](http://netlify.com/).
 
 ## License
 
