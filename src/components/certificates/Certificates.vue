@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const certificates = store.certificates
+const certificates = getSectionComputedData('certificates')
 </script>
 
 <template>

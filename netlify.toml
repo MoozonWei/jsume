@@ -1,0 +1,6 @@
+[build.environment]
+  NPM_FLAGS = "--version"
+  NODE_VERSION = "16"
+
+[build]
+  command = "pnpm run build"
