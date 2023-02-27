@@ -1,6 +1,6 @@
 {
   "private": true,
-  "packageManager": "pnpm@7.21.1",
+  "packageManager": "pnpm@7.28.0",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
