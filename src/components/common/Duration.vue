@@ -1,12 +1,12 @@
 <script setup lang="ts">
 defineProps<{
-  start: {
-    year: number
-    month: number
+  start?: {
+    year?: number
+    month?: number
   }
   end?: {
-    year: number
-    month: number
+    year?: number
+    month?: number
   }
   isTimePoint?: boolean
 }>()
@@ -14,7 +14,7 @@ defineProps<{
 
 <template>
   <span
-    v-if="start"
+    v-if="start && (start?.month || start?.year)"
     class="flex items-center gap-0.5"
   >
     <i-mdi:calendar />

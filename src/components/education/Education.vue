@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const education = store.education
+const education = getSectionComputedData('education')
 </script>
 
 <template>
@@ -10,8 +9,8 @@ const education = store.education
   >
     <div class="education-container">
       <EducationCard
-        v-for="edu in education"
-        :key="edu.institution"
+        v-for="edu, index in education"
+        :key="index"
         :education="edu"
       />
     </div>

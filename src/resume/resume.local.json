@@ -1,0 +1,20 @@
+{
+  "en": {
+    "basics": {
+      "name": "Somebody",
+      "label": "Please upload your resume in JSON format.",
+      "summary": "Please upload your resume in JSON format."
+    },
+    "skills": [],
+    "projects": [],
+    "work": [],
+    "publications": [],
+    "education": [],
+    "volunteer": [],
+    "awards": [],
+    "languages": [],
+    "interests": [],
+    "references": [],
+    "certificates": []
+  }
+}

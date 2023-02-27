@@ -4,7 +4,7 @@ defineProps<{
     institution: string
     area: string
     studyType: string
-    location: string
+    location?: string
     ongoing: boolean
     startDate: string
     endDate: string

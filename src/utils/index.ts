@@ -19,10 +19,20 @@ export const parseDate = (year: number | undefined, month: number | undefined) =
     12: 'Dec',
   }
 
-  if (!monthMap[month || 0] && !year)
+  if (year === undefined && month === undefined)
     return 'Present'
-  else if (!monthMap[month || 0])
-    return year
+  else if (year === undefined)
+    return monthMap[month!]
+  else if (month === undefined)
+    return year.toString()
 
   return `${monthMap[month || 0]} ${year}`
+}
+
+export const getSectionComputedData = (section: string) => {
+  const store = useStore()
+  const sectionData = computed(
+    () => store.resumeData[store.lang][section],
+  )
+  return sectionData
 }
