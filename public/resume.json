@@ -1,51 +1,135 @@
 {
   "en": {
     "basics": {
-      "name": "Anthony Fu",
-      "picture": "https://antfu.me/avatar.png",
-      "label": "Software Engineer",
-      "headline": "A ship in harbor is safe, but that is not what ships are built for.",
-      "summary": "My name is Anthony Fu, a master of computer science student and a freelance software engineer. My passion for software lies with dreaming up ideas and making them come true with elegant interfaces. I take great care in the experience, architecture, and code quality of the things I build.\n\nI am also an open-source enthusiast and maintainer. I love how collaboration and knowledge sharing happens through open-source and I am happy to see what I do could eventually feedback to the community and industry.",
-      "website": "https://antfu.me",
-      "address": "",
-      "projects_url": "https://antfu.me/projects",
-      "username": "antfu",
-      "email": "hi@antfu.me",
+      "name": "Moozon Wei",
+      "label": "Programmer",
+      "image": "",
+      "email": "email@gmail.com",
+      "phone": "(912) 555-4321",
+      "url": "https://personal.website.com",
+      "summary": "Write something about your self",
+      "location": {
+        "address": "2712 Broadway St",
+        "postalCode": "CA 94115",
+        "city": "San Francisco",
+        "countryCode": "US",
+        "region": "California"
+      },
       "profiles": [
         {
           "network": "GitHub",
-          "username": "antfu",
-          "url": "https://github.com/antfu"
+          "username": "username",
+          "url": "https://github.com/username"
         },
         {
           "network": "LinkedIn",
-          "url": "https://www.linkedin.com/in/antfu",
-          "username": "antfu"
+          "username": "username",
+          "url": "https://www.linkedin.com/in/username"
         },
         {
           "network": "Twitter",
-          "url": "https://twitter.com/antfu7",
-          "username": "antfu7"
+          "username": "username",
+          "url": "https://twitter.com/username"
         },
         {
           "network": "Instagram",
-          "username": "antfu7",
-          "url": "https://instagram.com/antfu7"
-        },
-        {
-          "network": "Portfolio",
-          "username": "antfu.me",
-          "url": "https://antfu.me"
+          "username": "username",
+          "url": "https://instagram.com/username"
         }
       ]
     },
+    "work": [
+      {
+        "company": "Company",
+        "position": "Position",
+        "website": "http://website.website",
+        "location": "Beijing, China",
+        "summary": "Summarize your work experience",
+        "ongoing": true,
+        "startDate": "2019-10-01",
+        "endDate": "",
+        "start": {
+          "year": 2019,
+          "month": 10
+        },
+        "end": {},
+        "highlights": [
+          "highlight 1 ",
+          "highlight 2",
+          "highlight 3"
+        ]
+      },
+      {
+        "company": "Company",
+        "position": "Position",
+        "website": "http://website.website",
+        "location": "your city, your country",
+        "summary": "Summarize your work experience",
+        "ongoing": false,
+        "startDate": "2019-10-01",
+        "endDate": "2020-06-01",
+        "start": {
+          "year": 2019,
+          "month": 10
+        },
+        "end": {
+          "year": 2020,
+          "month": 6
+        },
+        "highlights": [
+          "highlight 1 ",
+          "highlight 2",
+          "highlight 3"
+        ]
+      }
+    ],
+    "education": [
+      {
+        "institution": "XXXXXX University",
+        "area": "Computer Science",
+        "studyType": "Bachelor of Science",
+        "location": "Beijing, China",
+        "ongoing": true,
+        "startDate": "2015-09-01",
+        "endDate": "2019-06-01",
+        "start": {
+          "year": 2015,
+          "month": 9
+        },
+        "end": {
+          "year": 2019,
+          "month": 6
+        },
+        "description": "Description of your education",
+        "activities": "",
+        "gpa": "",
+        "courses": [
+          "Data Structure(95)",
+          "Java Programming(88)",
+          "Electronic System Fundamentals(86)",
+          "Operations Research(85)"
+        ]
+      }
+    ],
+    "awards": [
+      {
+        "title": "XXXXXX Award",
+        "summary": "Just a very easy competition, but I got the first prize.",
+        "description": "Description of the award",
+        "awarder": "Who gave you the award",
+        "date": "2018-10-01",
+        "fullDate": {
+          "year": 2018,
+          "month": 10
+        }
+      }
+    ],
     "skills": [
       {
         "keywords": [
           "TypeScript",
           "JavaScript",
           "Vue",
-          "Nuxt",
           "Vite"
         ],
         "level": "Senior",
@@ -94,275 +178,60 @@
         "name": "Languages"
       }
     ],
-    "projects": [
-      {
-        "name": "vitest/vitest",
-        "displayName": "Vitest",
-        "summary": "A blazing fast unit test framework powered by Vite.",
-        "website": "https://vitest.dev/",
-        "githubUrl": "https://github.com/vitest-dev/vitest",
-        "primaryLanguage": "TypeScript"
-      },
-      {
-        "name": "slidevjs/slidev",
-        "displayName": "Slidev",
-        "summary": "Presentation Slides for Developers.",
-        "website": "https://sli.dev/",
-        "githubUrl": "https://github.com/slidevjs/slidev",
-        "primaryLanguage": "TypeScript"
-      },
-      {
-        "name": "unocss/unocss",
-        "displayName": "UnoCSS",
-        "summary": "Instant on-demand atomic CSS engine.",
-        "website": "https://uno.antfu.me/",
-        "githubUrl": "https://github.com/unocss/unocss",
-        "primaryLanguage": "TypeScript"
-      },
-      {
-        "name": "vueuse/vueuse",
-        "displayName": "VueUse",
-        "summary": "Collection of essential Vue Composition API utils.",
-        "website": "https://vueuse.org/",
-        "githubUrl": "https://github.com/vueuse/vueuse",
-        "primaryLanguage": "TypeScript"
-      },
-      {
-        "name": "nuxt/framework",
-        "displayName": "Nuxt",
-        "summary": "The Hybrid Vue(3) Framework.",
-        "website": "https://v3.nuxtjs.org/",
-        "githubUrl": "https://github.com/nuxt/framework",
-        "primaryLanguage": "TypeScript"
-      },
-      {
-        "name": "vitejs/vite",
-        "displayName": "Vite",
-        "summary": "Next generation frontend tooling.",
-        "website": "https://vitejs.dev/",
-        "githubUrl": "https://github.com/vitejs/vite",
-        "primaryLanguage": "TypeScript"
-      }
-    ],
-    "work": [
-      {
-        "company": "NuxtLabs",
-        "position": "Software Engineer",
-        "website": "https://nuxtlabs.com/",
-        "location": "Remote",
-        "isCurrentRole": true,
-        "startDate": "2021-09-01",
-        "start": {
-          "year": 2021,
-          "month": 9
-        },
-        "end": {},
-        "highlights": [
-          "Integrated Vite into Nuxt 3 resulted in 50x faster development time.",
-          "Authored `unplugin` unifing the API between Webpack and Vite.",
-          "Created Vitest that improved the developer experience on testing."
-        ]
-      },
-      {
-        "company": "Open Source",
-        "position": "OSS Developer",
-        "website": "https://github.com/antfu",
-        "location": "Github",
-        "isCurrentRole": true,
-        "startDate": "2015-01-01",
-        "start": {
-          "year": 2015,
-          "month": 1
-        },
-        "end": {},
-        "highlights": [
-          "Vue.js & Vite.js Core Team Member",
-          "Received 15,000+ stars on personal projects",
-          "Maintaining numerous popular projects"
-        ]
-      },
-      {
-        "company": "ByteDance Ltd.",
-        "position": "Front-end Development Intern",
-        "website": "https://www.bytedance.com/",
-        "location": "Shanghai, China",
-        "summary": "In Product R & D and Engineering Architecture Department",
-        "highlights": [
-          "Developed a marketplace for low-code/no-code platforms with integrated documentation site, demo and coding playground."
-        ],
-        "startDate": "2020-06-01",
-        "endDate": "2020-09-01",
-        "start": {
-          "year": 2020,
-          "month": 6
-        },
-        "end": {
-          "year": 2020,
-          "month": 9
-        }
-      },
-      {
-        "company": "Foremost Groups, Inc.",
-        "position": "Technical Consultant",
-        "website": "http://www.foremostgroups.com/",
-        "location": "Taipei, Taiwan (Remote)",
-        "summary": "Provided technical support on market data collecting and analyzing",
-        "isCurrentRole": false,
-        "startDate": "2019-10-01",
-        "endDate": "2020-06-01",
-        "start": {
-          "year": 2019,
-          "month": 10
-        },
-        "end": {
-          "year": 2020,
-          "month": 6
-        }
-      },
-      {
-        "company": "Fastfish Ltd.",
-        "position": "Software Engineer Intern",
-        "website": "http://www.fastfish.com/",
-        "location": "Hangzhou, China",
-        "summary": "Worked on developing POS system in C#.NET and ASP.NET",
-        "isCurrentRole": false,
-        "startDate": "2016-07-01",
-        "endDate": "2016-09-01",
-        "start": {
-          "year": 2016,
-          "month": 7
-        },
-        "end": {
-          "year": 2016,
-          "month": 9
-        },
-        "highlights": [
-          "Improved back-end ASP.NET server performance by optimization SQL compounding algorithm"
-        ]
-      }
-    ],
-    "publications": [
-      {
-        "name": "New Ways to Vue",
-        "summary": "How the new tools and techniques affect the way we view and build applications",
-        "publisher": "Vue London 2021",
-        "website": "https://vuejslive.com/",
-        "releaseDate": "2021-10-20",
-        "slides": "https://antfu.me/posts/new-ways-to-vue-london-2021",
-        "fullReleaseDate": {
-          "year": 2021,
-          "month": 10,
-          "day": 20
-        }
-      },
-      {
-        "name": "Composable Vue",
-        "summary": "Talked about the reactivity system and Composition API in Vue.js",
-        "publisher": "VueDay 2021",
-        "website": "https://2021.vueday.it/",
-        "releaseDate": "2021-04-29",
-        "slides": "https://antfu.me/posts/composable-vue-vueday-2021",
-        "fullReleaseDate": {
-          "year": 2021,
-          "month": 4,
-          "day": 29
-        }
-      },
-      {
-        "name": "Develop with Vite",
-        "summary": "Introduce to Vite, the next generation frontend tooling",
-        "publisher": "Vue Beijing 2021",
-        "website": "https://twitter.com/beijing_vue",
-        "releaseDate": "2021-03-29",
-        "slides": "https://antfu.me/posts/vue-beijing-2021",
-        "fullReleaseDate": {
-          "year": 2021,
-          "month": 3,
-          "day": 29
-        }
-      },
-      {
-        "name": "Binjiang Front-End Developer Salon, Hangzhou",
-        "summary": "Talked about the reactivity system and Composition API in Vue.js",
-        "publisher": "Bingjiang Front-End Union",
-        "website": "https://wemp.app/posts/5ec27920-8201-4ef2-9027-92b09b136fab",
-        "releaseDate": "2020-09-26",
-        "slides": "https://antfu.me/posts/binfe-2020-zh/",
-        "fullReleaseDate": {
-          "year": 2020,
-          "month": 9,
-          "day": 26
-        }
-      }
-    ],
-    "education": [
-      {
-        "institution": "Tamkang University, New Taipei",
-        "area": "Computer Science",
-        "studyType": "Bachelor of Science",
-        "startDate": "2015-09-01",
-        "endDate": "2019-06-01",
-        "start": {
-          "year": 2015,
-          "month": 9
-        },
-        "end": {
-          "year": 2019,
-          "month": 6
-        },
-        "description": "",
-        "activities": "",
-        "gpa": "",
-        "courses": []
-      }
-    ],
-    "volunteer": [],
-    "awards": [
-      {
-        "title": "Idea Maker Competition Masterpiece Award",
-        "summary": "",
-        "awarder": "Oriental Institute of Technology",
-        "date": "2018-10-01",
-        "fullDate": {
-          "year": 2018,
-          "month": 10
-        }
-      },
-      {
-        "title": "Graduation Project Competition Masterpiece Award",
-        "summary": "",
-        "awarder": "Tamkang University",
-        "date": "2018-06-01",
-        "fullDate": {
-          "year": 2018,
-          "month": 6
-        }
-      },
-      {
-        "title": "First Class Scholarship for Academics (top one)",
-        "summary": "",
-        "awarder": "Tamkang University",
-        "date": "2016-11-01",
-        "fullDate": {
-          "year": 2016,
-          "month": 11
-        }
-      }
-    ],
     "languages": [
       {
         "language": "Chinese",
         "fluency": "Native speaker"
-      }, {
+      },
+      {
         "language": "English",
         "fluency": "Fluent"
-      }, {
+      },
+      {
         "language": "Japanese",
         "fluency": "Intermediate"
       }
     ],
+    "projects": [
+      {
+        "name": "Vitest",
+        "summary": "A blazing fast unit test framework powered by Vite.",
+        "githubUrl": "https://github.com/vitest-dev/vitest",
+        "description": "Description of the project",
+        "keywords": [
+          "TypeScript"
+        ],
+        "startDate": "2019-01-01",
+        "start": {
+          "year": 2019,
+          "month": 1
+        },
+        "endDate": "2021-01-01",
+        "end": {
+          "year": 2021,
+          "month": 1
+        },
+        "website": "https://vitest.dev/"
+      }
+    ],
     "interests": [],
+    "certificates": [],
+    "volunteer": [],
     "references": [],
-    "certificates": []
-  }
+    "publications": []
+  },
+  "order": [
+    "about",
+    "projects",
+    "work",
+    "education",
+    "publications",
+    "skills",
+    "awards",
+    "languages",
+    "certificates",
+    "volunteer",
+    "interests",
+    "references"
+  ]
 }
