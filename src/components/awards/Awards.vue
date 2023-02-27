@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const awards = store.awards
+const awards = getSectionComputedData('awards')
 </script>
 
 <template>
