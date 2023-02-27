@@ -15,7 +15,10 @@ declare global {
   const effectScope: typeof import('vue')['effectScope']
   const getCurrentInstance: typeof import('vue')['getCurrentInstance']
   const getCurrentScope: typeof import('vue')['getCurrentScope']
+  const getGistResumeData: typeof import('./src/api/index')['getGistResumeData']
   const getGithubRepoStars: typeof import('./src/api/index')['getGithubRepoStars']
+  const getLocalResumeData: typeof import('./src/api/index')['getLocalResumeData']
+  const getSectionComputedData: typeof import('./src/utils/index')['getSectionComputedData']
   const h: typeof import('vue')['h']
   const inject: typeof import('vue')['inject']
   const isProxy: typeof import('vue')['isProxy']
@@ -92,7 +95,10 @@ declare module 'vue' {
     readonly effectScope: UnwrapRef<typeof import('vue')['effectScope']>
     readonly getCurrentInstance: UnwrapRef<typeof import('vue')['getCurrentInstance']>
     readonly getCurrentScope: UnwrapRef<typeof import('vue')['getCurrentScope']>
+    readonly getGistResumeData: UnwrapRef<typeof import('./src/api/index')['getGistResumeData']>
     readonly getGithubRepoStars: UnwrapRef<typeof import('./src/api/index')['getGithubRepoStars']>
+    readonly getLocalResumeData: UnwrapRef<typeof import('./src/api/index')['getLocalResumeData']>
+    readonly getSectionComputedData: UnwrapRef<typeof import('./src/utils/index')['getSectionComputedData']>
     readonly h: UnwrapRef<typeof import('vue')['h']>
     readonly inject: UnwrapRef<typeof import('vue')['inject']>
     readonly isProxy: UnwrapRef<typeof import('vue')['isProxy']>

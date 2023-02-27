@@ -1,6 +1,6 @@
 <script setup lang="ts">
 defineProps<{
-  location: string
+  location?: string
 }>()
 </script>
 

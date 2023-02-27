@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const skills = store.skills
+const skills = getSectionComputedData('skills')
 </script>
 
 <template>

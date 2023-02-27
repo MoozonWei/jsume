@@ -1,12 +1,46 @@
 import { defineStore } from 'pinia'
-import resumeConfigObject from '@/resume/resume.test.json'
-// import resumeConfigObject from '@/resume/resume.antfu.json'
+import { useAsyncState } from '@vueuse/core'
+// import localResumeData from '@/resume/resume.test.json'
+import localResumeData from '@/resume/resume.local.json'
 
 export const useStore = defineStore('main', () => {
   // state
+  const [
+    gistUsername,
+    gistId,
+  ] = ['MoozonWei', '70c30e0182fdf013aa6454f10c9db299']
+  // const remoteResumeData = await getResumeData(gistUsername, gistId)
+  const {
+    state: gistState,
+    isReady: gistIsReady,
+    isLoading: gistIsLoading,
+  } = useAsyncState(
+    getGistResumeData(gistUsername, gistId),
+    {},
+  )
+
+  const {
+    state: localState,
+    isReady: localIsReady,
+    isLoading: localIsLoading,
+  } = useAsyncState(
+    getLocalResumeData(),
+    {},
+  )
+
+  const resumeData = computed(
+    () => (
+      gistIsReady.value
+        ? gistState.value
+        : localIsReady.value
+          ? localState.value
+          : localResumeData
+    ),
+  )
   // get languages from resume.json
-  const langs = _.keys(resumeConfigObject)
-  const order: string[] = resumeConfigObject.order as string[] | [
+  const lang = 'en'
+  const langs = computed(() => _.keys(resumeData.value))
+  const defaultOrder = [
     'about',
     'projects',
     'publications',
@@ -20,49 +54,16 @@ export const useStore = defineStore('main', () => {
     'interests',
     'references',
   ]
-  /**
-   * basics
-   * work
-   * volunteer
-   * education
-   * awards
-   * certificates
-   * publications
-   * skills
-   * languages
-   * interests
-   * references
-   * projects
-   */
-  const {
-    basics,
-    work,
-    volunteer,
-    education,
-    awards,
-    certificates,
-    publications,
-    skills,
-    languages,
-    interests,
-    references,
-    projects,
-  } = resumeConfigObject.en
+  const order: string[] = resumeData.value.order as string[] || defaultOrder
 
   return {
+    lang,
     langs,
     order,
-    basics,
-    work,
-    volunteer,
-    education,
-    awards,
-    certificates,
-    publications,
-    skills,
-    languages,
-    interests,
-    references,
-    projects,
+    resumeData,
+    localIsReady,
+    localIsLoading,
+    gistIsReady,
+    gistIsLoading,
   }
 })

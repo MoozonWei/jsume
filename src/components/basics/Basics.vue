@@ -1,8 +1,6 @@
 <!-- eslint-disable unused-imports/no-unused-imports -->
 <script setup lang="ts">
-const store = useStore()
-const basics = store.basics
-const profiles = [...basics.profiles]
+const basics = getSectionComputedData('basics')
 </script>
 
 <template>
@@ -64,7 +62,7 @@ const profiles = [...basics.profiles]
       class="basics-profiles-container"
     >
       <ProfileIcons
-        v-for="item in profiles"
+        v-for="item in basics.profiles"
         :key="item.network"
         :username="item.username"
         :network="item.network"

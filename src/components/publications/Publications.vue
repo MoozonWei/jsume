@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const publications = store.publications
+const publications = getSectionComputedData('publications')
 </script>
 
 <template>

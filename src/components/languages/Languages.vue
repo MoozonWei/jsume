@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const languages = store.languages
+const languages = getSectionComputedData('languages')
 </script>
 
 <template>

@@ -1,6 +1,5 @@
 <script setup lang="ts">
-const store = useStore()
-const references = store.references
+const references = getSectionComputedData('references')
 </script>
 
 <template>
