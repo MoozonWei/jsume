@@ -1,4 +1,4 @@
-import config from '@/config/jasume.config.json'
+import config from '@/config/jsume.config.json'
 
 export const useStore = defineStore('main', () => {
   // get resume data from gist

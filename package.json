@@ -1,12 +1,6 @@
 {
-  "name": "jasume",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "author": {
-    "name": "Moozon",
-    "email": "muzhenweizh@gmail.com"
-  },
+  "packageManager": "pnpm@7.21.1",
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
