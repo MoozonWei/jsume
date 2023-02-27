@@ -1,10 +1,17 @@
 <script setup lang="ts">
 const store = useStore()
 const order = store.order
+
+const resumeIsLoading = computed(
+  () => store.gistIsLoading || store.localIsLoading,
+
+)
 </script>
 
 <template>
+  <Loading v-if="resumeIsLoading" />
   <div
+    v-else
     class="container"
   >
     <Basics />

@@ -27,8 +27,12 @@ export default defineConfig({
         'vue',
         'vue-router',
         {
-          'pinia': ['storeToRefs'],
+          'pinia': [
+            'storeToRefs',
+            'defineStore',
+          ],
           '@vueuse/core': [
+            'useAsyncState',
             'useStorage',
             'useThrottleFn',
             'useDebounceFn',
