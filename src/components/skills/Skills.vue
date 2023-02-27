@@ -20,7 +20,7 @@ const skills = getSectionComputedData('skills')
         <span
           class="skill-keywords"
         >
-          {{ skill.keywords.join(' | ') }}
+          {{ skill.keywords.join(', ') }}
         </span>
       </template>
     </div>

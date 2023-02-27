@@ -7,7 +7,7 @@
 }
 
 .education-card-sub {
-  @apply flex items-center;
+  @apply text-neutral-600;
 }
 
 .education-study-type {
