@@ -48,7 +48,7 @@ const basics = getSectionComputedData('basics')
         </span>
       </a>
       <div
-        v-if="basics.location"
+        v-if="basics.location && basics.location?.city && basics.location?.countryCode"
         class="basics-contact-icon-text"
       >
         <i-material-symbols:location-on />
