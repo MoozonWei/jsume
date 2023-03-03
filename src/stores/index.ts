@@ -1,5 +1,3 @@
-import config from '@/config/jsume.config.json'
-
 export const useStore = defineStore('main', () => {
   // get resume data from gist
   const {
@@ -7,7 +5,7 @@ export const useStore = defineStore('main', () => {
     isReady: gistIsReady,
     isLoading: gistIsLoading,
   } = useAsyncState(
-    getGistResumeData(config?.gist?.username, config?.gist?.id),
+    getGistResumeData(import.meta.env.VITE_GIST_USERNAME, import.meta.env.VITE_GIST_ID),
     {},
   )
   // get resume data from local public/resume.json file
