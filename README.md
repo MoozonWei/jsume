@@ -254,32 +254,32 @@ Inspired by [antfu/resume](https://github.com/antfu/resume) and [JSON Resume](ht
 
 ## Deploy your own resume
 
-1. Clone with [degit](https://github.com/Rich-Harris/degit).
+1. Fork this repository.
 
-    ```shell
-    degit moozonwei/jsume my-jsume
+2. Create a `resume.json` [gist](https://gist.github.com/), and get `username` & `gistId`.
+
+    *For example*:
+
+    ```
+    https://gist.github.com/MoozonWei/70c30e0182fdf013aa6454f10c9db299
+    https://|----domain---|-username-|------------gistId-------------|
     ```
 
-2. Create a `resume.json` [gist](https://gist.github.com/), and get the gist id.
+<!-- 3. **[Optional & Not recommended]** Create `/public/resume.json`.
 
-3. Edit `/src/config/jsume.config.json`:
+    > Gist stores your **online** resume data, and `/public/resume.json` stores your resume data **locally**. If resume data cannot be found on Gist, local resume data will be used as a backup. -->
 
-    ```JSON
-    {
-      "gist": {
-        "username": "your github username",
-        "id": "gist id"
-      }
-    }
-    ```
+3. Setup [Netlify](http://netlify.com/).
 
-4. Replace `/public/resume.json` with your own `resume.json` file. [optional]
+    - [Link repository](https://docs.netlify.com/git/overview/#git-provider-support)
+    - [Create environment variables](https://docs.netlify.com/environment-variables/get-started/#site-environment-variables)
 
-    > Gist stores your **online** resume data, and `/public/resume.json` stores your resume data **locally**. If resume data cannot be found on Gist, local resume data will be used as a backup.
+        ```
+        VITE_GIST_USERNAME=username
+        VITE_GIST_ID=gistId
+        ```
 
-5. Push this project to Github. [optional]
-
-6. Setup [Netlify](http://netlify.com/).
+4. [Sync the fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) to keep it up-to-date with the upstream repository.
 
 ## License
 
