@@ -1,4 +1,7 @@
 export const parseGithubUrl = (url: string) => {
+  // todo: use regex to parse url
+  if (url[url.length - 1] === '/')
+    url = url.slice(0, -1)
   const [username, repo] = url.split('/').slice(-2)
   return { username, repo }
 }
