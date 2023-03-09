@@ -22,6 +22,7 @@ const resumeIsLoading = computed(
         :name="comp"
       />
     </div>
+    <LangSelector class="fixed right-5 top-5 text-neutral-600" />
   </div>
 </template>
 

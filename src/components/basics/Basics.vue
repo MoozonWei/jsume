@@ -4,7 +4,10 @@ const basics = getSectionComputedData('basics')
 </script>
 
 <template>
-  <div class="basics-container">
+  <div
+    v-if="basics"
+    class="basics-container"
+  >
     <div class="basics-title">
       <div class="basics-name">
         {{ basics.name }}
