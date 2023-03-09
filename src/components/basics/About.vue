@@ -1,11 +1,12 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const basics = getSectionComputedData('basics')
 </script>
 
 <template>
   <SectionBox
     v-if="basics.summary && basics.summary.length > 0"
-    title="About"
+    :title="t('title.about')"
   >
     <div
       class="text-justify"

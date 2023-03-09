@@ -2,6 +2,7 @@
 const props = defineProps<{
   notCollapse?: boolean
 }>()
+const { t } = useI18n()
 const isCollapsed = ref(!props.notCollapse)
 </script>
 
@@ -15,7 +16,7 @@ const isCollapsed = ref(!props.notCollapse)
     class="text-sm text-neutral-400 underline underline-dotted underline-offset-2 cursor-pointer inline-block animate-pulse"
     @click="isCollapsed = !isCollapsed"
   >
-    show {{ isCollapsed ? 'more' : 'less' }}
+    {{ isCollapsed ? t('showMore') : t('showLess') }}
   </span>
 </template>
 
