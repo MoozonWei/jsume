@@ -1,11 +1,12 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const languages = getSectionComputedData('languages')
 </script>
 
 <template>
   <SectionBox
     v-if="languages && languages.length > 0"
-    title="Languages"
+    :title="t('title.languages')"
   >
     <template
       v-for="language, index in languages"

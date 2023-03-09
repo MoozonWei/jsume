@@ -1,11 +1,12 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const awards = getSectionComputedData('awards')
 </script>
 
 <template>
   <SectionBox
     v-if="awards && awards.length > 0"
-    title="Awards"
+    :title="t('title.awards')"
   >
     <div
       class="awards-container"

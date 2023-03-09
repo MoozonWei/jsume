@@ -1,11 +1,12 @@
 <script setup lang="ts">
+const { t } = useI18n()
 const work = getSectionComputedData('work')
 </script>
 
 <template>
   <SectionBox
     v-if="work && work.length > 0"
-    title="Work Experiences"
+    :title="t('title.work')"
   >
     <div class="work-container">
       <WorkCard
