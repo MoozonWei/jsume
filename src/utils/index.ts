@@ -35,7 +35,7 @@ export const parseDate = (year: number | undefined, month: number | undefined) =
 export const getSectionComputedData = (section: string) => {
   const store = useStore()
   const sectionData = computed(
-    () => store.resumeData[store.lang][section],
+    () => store.resumeData[store.lang]?.[section],
   )
   return sectionData
 }

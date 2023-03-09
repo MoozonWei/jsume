@@ -25,17 +25,20 @@ export const useStore = defineStore('main', () => {
         : localState.value
     ),
   )
-  const lang = 'en'
-  const langs = computed(
-    () => _.keys(resumeData.value),
+  const jsonLangs = computed(
+    () => _.filter(
+      _.keys(resumeData.value),
+      (key: string) => key !== 'order' && JSON.stringify(resumeData.value[key]) !== '{}',
+    ),
   )
+  const lang = ref(jsonLangs.value[0])
   const order = computed(
     () => resumeData.value.order as string[] || defaultSectionOrder,
   )
 
   return {
     lang,
-    langs,
+    jsonLangs,
     order,
     resumeData,
     localIsReady,

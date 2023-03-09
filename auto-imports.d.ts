@@ -9,6 +9,7 @@ declare global {
   const axios: typeof import('axios')['default']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
+  const createI18n: typeof import('vue-i18n')['createI18n']
   const customRef: typeof import('vue')['customRef']
   const defaultResumeData: typeof import('./src/constants/index')['defaultResumeData']
   const defaultSectionOrder: typeof import('./src/constants/index')['defaultSectionOrder']
@@ -68,6 +69,7 @@ declare global {
   const useDebounceFn: typeof import('@vueuse/core')['useDebounceFn']
   const useI18n: typeof import('vue-i18n')['useI18n']
   const useLink: typeof import('vue-router')['useLink']
+  const usePreferredLanguages: typeof import('@vueuse/core')['usePreferredLanguages']
   const useRoute: typeof import('vue-router')['useRoute']
   const useRouter: typeof import('vue-router')['useRouter']
   const useSlots: typeof import('vue')['useSlots']
@@ -93,6 +95,7 @@ declare module 'vue' {
     readonly axios: UnwrapRef<typeof import('axios')['default']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>
+    readonly createI18n: UnwrapRef<typeof import('vue-i18n')['createI18n']>
     readonly customRef: UnwrapRef<typeof import('vue')['customRef']>
     readonly defaultResumeData: UnwrapRef<typeof import('./src/constants/index')['defaultResumeData']>
     readonly defaultSectionOrder: UnwrapRef<typeof import('./src/constants/index')['defaultSectionOrder']>
@@ -152,6 +155,7 @@ declare module 'vue' {
     readonly useDebounceFn: UnwrapRef<typeof import('@vueuse/core')['useDebounceFn']>
     readonly useI18n: UnwrapRef<typeof import('vue-i18n')['useI18n']>
     readonly useLink: UnwrapRef<typeof import('vue-router')['useLink']>
+    readonly usePreferredLanguages: UnwrapRef<typeof import('@vueuse/core')['usePreferredLanguages']>
     readonly useRoute: UnwrapRef<typeof import('vue-router')['useRoute']>
     readonly useRouter: UnwrapRef<typeof import('vue-router')['useRouter']>
     readonly useSlots: UnwrapRef<typeof import('vue')['useSlots']>

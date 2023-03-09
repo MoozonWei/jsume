@@ -5,7 +5,7 @@ const basics = getSectionComputedData('basics')
 
 <template>
   <SectionBox
-    v-if="basics.summary && basics.summary.length > 0"
+    v-if="basics && basics.summary && basics.summary.length > 0"
     :title="t('title.about')"
   >
     <div

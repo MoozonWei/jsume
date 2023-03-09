@@ -30,6 +30,7 @@ declare module '@vue/runtime-core' {
     'IMdi:web': typeof import('~icons/mdi/web')['default']
     IMdiGithub: typeof import('~icons/mdi/github')['default']
     Interests: typeof import('./src/components/interests/Interests.vue')['default']
+    LangSelector: typeof import('./src/components/common/LangSelector.vue')['default']
     Languages: typeof import('./src/components/languages/Languages.vue')['default']
     Loading: typeof import('./src/components/common/Loading.vue')['default']
     Location: typeof import('./src/components/common/Location.vue')['default']

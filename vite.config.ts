@@ -36,8 +36,12 @@ export default defineConfig({
             'useStorage',
             'useThrottleFn',
             'useDebounceFn',
+            'usePreferredLanguages',
           ],
-          'vue-i18n': ['useI18n'],
+          'vue-i18n': [
+            'createI18n',
+            'useI18n',
+          ],
           'lodash': [
             ['default', '_'],
           ],
