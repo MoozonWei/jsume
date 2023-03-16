@@ -11,7 +11,7 @@
 }
 
 .basics-label {
-  @apply text-xl text-neutral-500 leading-none align-top <sm:(justify-center text-center);
+  @apply text-xl text-neutral-500 leading-tight <sm:(justify-center text-center);
 }
 
 .basics-contact-container {
