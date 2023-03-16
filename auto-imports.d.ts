@@ -76,6 +76,7 @@ declare global {
   const useStorage: typeof import('@vueuse/core')['useStorage']
   const useStore: typeof import('./src/stores/index')['useStore']
   const useThrottleFn: typeof import('@vueuse/core')['useThrottleFn']
+  const useTitle: typeof import('@vueuse/core')['useTitle']
   const watch: typeof import('vue')['watch']
   const watchEffect: typeof import('vue')['watchEffect']
   const watchPostEffect: typeof import('vue')['watchPostEffect']
@@ -162,6 +163,7 @@ declare module 'vue' {
     readonly useStorage: UnwrapRef<typeof import('@vueuse/core')['useStorage']>
     readonly useStore: UnwrapRef<typeof import('./src/stores/index')['useStore']>
     readonly useThrottleFn: UnwrapRef<typeof import('@vueuse/core')['useThrottleFn']>
+    readonly useTitle: UnwrapRef<typeof import('@vueuse/core')['useTitle']>
     readonly watch: UnwrapRef<typeof import('vue')['watch']>
     readonly watchEffect: UnwrapRef<typeof import('vue')['watchEffect']>
     readonly watchPostEffect: UnwrapRef<typeof import('vue')['watchPostEffect']>
