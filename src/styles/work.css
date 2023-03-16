@@ -11,11 +11,11 @@
 }
 
 .work-company {
-  @apply font-bold underline underline-0.0625rem underline-neutral-400 underline-dashed underline-offset-3;
+  @apply font-bold truncate underline underline-0.0625rem underline-neutral-400 underline-dashed underline-offset-3;
 }
 
 .work-position {
-  @apply text-neutral-400;
+  @apply truncate text-neutral-400;
 }
 
 .work-duration-location {
