@@ -32,6 +32,7 @@ export default defineConfig({
             'defineStore',
           ],
           '@vueuse/core': [
+            'useTitle',
             'useAsyncState',
             'useStorage',
             'useThrottleFn',

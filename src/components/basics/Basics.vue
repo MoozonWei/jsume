@@ -1,6 +1,10 @@
 <!-- eslint-disable unused-imports/no-unused-imports -->
 <script setup lang="ts">
 const basics = getSectionComputedData('basics')
+const title = computed(() => (
+  basics.value?.name.toUpperCase() + (basics.value?.label ? ` | ${basics.value.label}` : '')
+))
+useTitle(title)
 </script>
 
 <template>
@@ -9,7 +13,10 @@ const basics = getSectionComputedData('basics')
     class="basics-container"
   >
     <div class="basics-title">
-      <div class="basics-name">
+      <div
+        v-if="basics.name"
+        class="basics-name"
+      >
         {{ basics.name }}
       </div>
       <div
