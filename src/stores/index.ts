@@ -31,7 +31,10 @@ export const useStore = defineStore('main', () => {
       (key: string) => key !== 'order' && JSON.stringify(resumeData.value[key]) !== '{}',
     ),
   )
-  const lang = ref(jsonLangs.value[0])
+  // const lang = ref(jsonLangs.value[0])
+  const lang = computed(
+    () => jsonLangs.value[0],
+  )
   const order = computed(
     () => resumeData.value.order as string[] || defaultSectionOrder,
   )
