@@ -9,7 +9,7 @@ defineProps<{
     v-if="ongoing"
     class="flex items-center gap-0.5"
   >
-    <i-mdi:circle class="text-green-200 animate-pulse" />
+    <i-mdi:circle class="animate-pulse text-green-200" />
     Ongoing
   </span>
 </template>

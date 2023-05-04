@@ -23,18 +23,18 @@ watchEffect(() => {
   <div v-if="store.jsonLangs.length > 1">
     <Listbox v-model="store.lang">
       <ListboxButton
-        class="rounded-full p-2 w-10 aspect-square cursor-pointer backdrop-filter bg-black/5 backdrop-blur"
+        class="aspect-square w-10 cursor-pointer rounded-full bg-black/5 p-2 backdrop-blur backdrop-filter"
       >
         {{ store.lang }}
       </ListboxButton>
       <ListboxOptions
-        class="text-xs backdrop-filter bg-black/5 backdrop-blur mt-2 rounded-full flex flex-col"
+        class="mt-2 flex flex-col rounded-full bg-black/5 text-xs backdrop-blur backdrop-filter"
       >
         <ListboxOption
           v-for="item in langArray"
           :key="item.id"
           :value="item.lang"
-          class="text-center leading-10 w-10 aspect-square rounded-full cursor-pointer hover:bg-neutral-500/15 trans"
+          class="trans aspect-square w-10 cursor-pointer rounded-full text-center leading-10 hover:bg-neutral-500/15"
         >
           {{ item.name }}
         </ListboxOption>

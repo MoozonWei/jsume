@@ -28,7 +28,7 @@ const resumeIsLoading = computed(
 
 <style scoped>
 .container {
-  @apply mx-auto p-4 lg:px-16 xl:px-48 grid grid-cols-[15fr,50fr] <sm:block;
+  @apply mx-auto p-4 lg:px-16 xl:px-48 grid grid-cols-[15fr_50fr] lt-sm:block;
 }
 
 .right-page {

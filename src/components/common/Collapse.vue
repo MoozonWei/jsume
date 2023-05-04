@@ -13,7 +13,7 @@ const isCollapsed = ref(!props.notCollapse)
     <slot />
   </template>
   <span
-    class="text-sm text-neutral-400 underline underline-dotted underline-offset-2 cursor-pointer inline-block animate-pulse"
+    class="inline-block animate-pulse cursor-pointer text-sm text-neutral-400 underline underline-offset-2 underline-dotted"
     @click="isCollapsed = !isCollapsed"
   >
     {{ isCollapsed ? t('showMore') : t('showLess') }}

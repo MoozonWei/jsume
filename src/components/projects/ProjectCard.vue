@@ -62,9 +62,9 @@ onMounted(
       <a
         v-if="project.githubUrl && githubRepoStars"
         :href="project.githubUrl"
-        class="project-github-stars group"
+        class="group project-github-stars"
       >
-        <i-mdi:star class="trans group-hover:(text-yellow-300 animate-wiggle)" /> {{ githubRepoStars }}
+        <i-mdi:star class="trans group-hover:text-yellow-300" /> {{ githubRepoStars }}
       </a>
     </div>
     <div
