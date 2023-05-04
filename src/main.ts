@@ -5,7 +5,8 @@ import App from '@/App.vue'
 import router from '@/router'
 import i18n from '@/locale/i18n'
 
-import 'virtual:windi.css'
+import 'virtual:uno.css'
+import '@unocss/reset/tailwind.css'
 import '@/styles/main.css'
 
 const pinia = createPinia()
