@@ -1,11 +1,13 @@
 export const useStore = defineStore('main', () => {
+  // get gist username and gist id from env variables
+  const [username, gistId] = [import.meta.env.VITE_GIST_USERNAME, import.meta.env.VITE_GIST_ID]
   // get resume data from gist
   const {
     state: gistState,
     isReady: gistIsReady,
     isLoading: gistIsLoading,
   } = useAsyncState(
-    getGistResumeData(import.meta.env.VITE_GIST_USERNAME, import.meta.env.VITE_GIST_ID),
+    getGistResumeData(username, gistId),
     {},
   )
   // get resume data from local public/resume.json file
