@@ -5,7 +5,7 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
-  const _: typeof import('lodash')['default']
+  const _: typeof import('lodash-es')['default']
   const axios: typeof import('axios')['default']
   const computed: typeof import('vue')['computed']
   const createApp: typeof import('vue')['createApp']
@@ -92,7 +92,7 @@ import { UnwrapRef } from 'vue'
 declare module 'vue' {
   interface ComponentCustomProperties {
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
-    readonly _: UnwrapRef<typeof import('lodash')['default']>
+    readonly _: UnwrapRef<typeof import('lodash-es')['default']>
     readonly axios: UnwrapRef<typeof import('axios')['default']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
     readonly createApp: UnwrapRef<typeof import('vue')['createApp']>

@@ -43,7 +43,7 @@ export default defineConfig({
             'createI18n',
             'useI18n',
           ],
-          'lodash': [
+          'lodash-es': [
             ['default', '_'],
           ],
           'axios': [
