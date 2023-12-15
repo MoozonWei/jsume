@@ -44,7 +44,7 @@ const sectionComponents: { [key: string]: any } = {
   Projects,
 }
 
-const getSection = (name: string) => {
+function getSection(name: string) {
   const comp = sectionComponents[name]
   if (comp)
     return comp

@@ -1,6 +1,6 @@
 import type { SimpMonthStr } from '@/types/shareTypes'
 
-export const parseGithubUrl = (url: string) => {
+export function parseGithubUrl(url: string) {
   // todo: use regex to parse url
   if (url[url.length - 1] === '/')
     url = url.slice(0, -1)
@@ -8,7 +8,7 @@ export const parseGithubUrl = (url: string) => {
   return { username, repo }
 }
 
-export const parseDate = (year: number | undefined, month: number | undefined) => {
+export function parseDate(year: number | undefined, month: number | undefined) {
   const monthMap: { [key: number]: SimpMonthStr } = {
     1: 'Jan',
     2: 'Feb',
@@ -34,7 +34,7 @@ export const parseDate = (year: number | undefined, month: number | undefined) =
   return `${monthMap[month || 0]} ${year}`
 }
 
-export const getSectionComputedData = (section: string) => {
+export function getSectionComputedData(section: string) {
   const store = useStore()
   const sectionData = computed(() => store.resumeData[store.lang]?.[section])
   return sectionData

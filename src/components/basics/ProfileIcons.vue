@@ -114,7 +114,7 @@ const profileIcons: { [key: string]: any } = {
   other: OtherIcon,
 }
 
-const getIcon = (network: string) => {
+function getIcon(network: string) {
   const icon = profileIcons[network]
   if (icon)
     return icon
